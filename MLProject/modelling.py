@@ -22,7 +22,7 @@ mlflow.set_experiment("SVM Personality Classification")
 mlflow.sklearn.autolog()
 
 # Run experiment
-with mlflow.start_run():
+with mlflow.start_run(nested=True):
     model = SVC(kernel="linear", C=1.0)
     model.fit(X_train, y_train)
 
