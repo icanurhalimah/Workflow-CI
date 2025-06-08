@@ -25,3 +25,11 @@ jobs:
       run: |
         cd MLProject
         mlflow run . --env-manager=local -P data_path=personality_dataset_clean.csv
+
+    - name: Commit and Push Artefak ke GitHub
+      run: |
+        git config user.name "github-actions"
+        git config user.email "actions@github.com"
+        git add MLProject/model_artifacts/*
+        git commit -m "Upload artefak model dari run ${{ github.run_id }}"
+        git push origin main
