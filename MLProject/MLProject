@@ -1,10 +1,8 @@
-name: personality-svm
-
-python_env: python_env.yaml
+name: svm_personality_project
 
 entry_points:
   main:
     parameters:
-      data_path: {type: str, default: "personality_dataset_clean.csv"}
+      data_path: {type: str}
     command: >
       python modelling_tuning.py --data_path {data_path}
