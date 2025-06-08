@@ -20,16 +20,15 @@ jobs:
           environment-file: MLProject/conda.yaml
           activate-environment: mlflow-env
           auto-activate-base: false
-          python-version: 3.12
 
-      - name: Install MLflow CLI manually (fallback)
+      - name: Install MLflow (manual pip fallback)
+        shell: bash -l {0}
         run: |
-          conda activate mlflow-env
+          source activate mlflow-env
           pip install mlflow==2.19.0
 
       - name: Run MLflow Project
+        shell: bash -l {0}
         run: |
-          conda activate mlflow-env
-          which python  # debug info
-          which mlflow  # debug info
+          source activate mlflow-env
           mlflow run MLProject
