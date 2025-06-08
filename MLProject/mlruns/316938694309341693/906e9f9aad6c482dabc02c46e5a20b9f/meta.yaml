@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/MLProject/mlruns/316938694309341693/906e9f9aad6c482dabc02c46e5a20b9f/artifacts
+end_time: 1749424334603
+entry_point_name: ''
+experiment_id: '316938694309341693'
+lifecycle_stage: active
+run_id: 906e9f9aad6c482dabc02c46e5a20b9f
+run_name: overjoyed-hawk-422
+run_uuid: 906e9f9aad6c482dabc02c46e5a20b9f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749424334597
+status: 3
+tags: []
+user_id: runner
