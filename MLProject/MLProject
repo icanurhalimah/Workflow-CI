@@ -1,8 +1,6 @@
-name: svm_personality_project
-
-conda_env: conda.yaml
-
+name: personality-svm
 entry_points:
   main:
-    command: >
-      python modelling_tuning.py
+    parameters: {}
+    command: "python modelling_tuning.py"
+python_env: python_env.yaml
